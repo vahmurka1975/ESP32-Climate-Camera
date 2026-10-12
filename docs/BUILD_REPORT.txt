@@ -1,0 +1,13 @@
+Статические проверки пройдены:
+{
+  "fw_version": true,
+  "version_footer": true,
+  "targets_only": true,
+  "fridge_5_minutes": true,
+  "humid_20_120": true,
+  "display_recovery": true,
+  "pins": true,
+  "fan_pwm_unchanged": true
+}
+
+Компиляция .bin не запускалась: в среде нет arduino-cli, platformio и Arduino IDE.
