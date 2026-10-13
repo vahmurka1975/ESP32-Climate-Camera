@@ -1,0 +1,43 @@
+{
+  "project": "ESP32-Climate-Camera",
+  "version": "1.2.0",
+  "release_date": "2026-10-12",
+  "artifact_type": "source_release",
+  "display": "ST7789 240x240",
+  "target_board": "ESP32 Dev Module (classic dual-core ESP32)",
+  "arduino_ide_target": "1.8.19",
+  "arduino_esp32_target": "2.0.17",
+  "sketch": "ClimateCamera_1_2_0_IDE1819/ClimateCamera_1_2_0_IDE1819.ino",
+  "tft_spi_hz": 20000000,
+  "features": [
+    "SHT30/31",
+    "TFT UI",
+    "Wi-Fi AP+STA",
+    "Web UI",
+    "Web OTA",
+    "NVS"
+  ],
+  "gpio_definitions": {
+    "PIN_I2C_SDA": 21,
+    "PIN_I2C_SCL": 22,
+    "PIN_ENC_A": 32,
+    "PIN_ENC_B": 33,
+    "PIN_ENC_SW": 4,
+    "PIN_FAN_PWM": 16,
+    "PIN_FAN_TACH": 27,
+    "PIN_RELAY_IN1": 15,
+    "PIN_RELAY_IN2": 17,
+    "PIN_RELAY_IN3": 14,
+    "PIN_RELAY_IN4": 26
+  },
+  "fan_functions_unchanged_from_attached_1_0_4": {
+    "setFanDuty": true,
+    "setupFanPWM": true,
+    "updateFanControl": true
+  },
+  "esp32_compilation_performed": false,
+  "hardware_tests_performed": false,
+  "ready_bin_included": false,
+  "validation": "Static source checks, complete SHA-256 coverage, ZIP CRC and extracted-package checks",
+  "notes": "Source package only; build and bench-test before operation. Change default credentials."
+}
