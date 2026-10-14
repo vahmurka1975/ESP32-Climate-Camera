@@ -1,43 +1,136 @@
 {
   "project": "ESP32-Climate-Camera",
-  "version": "1.2.0",
-  "release_date": "2026-10-12",
-  "artifact_type": "source_release",
-  "display": "ST7789 240x240",
-  "target_board": "ESP32 Dev Module (classic dual-core ESP32)",
-  "arduino_ide_target": "1.8.19",
-  "arduino_esp32_target": "2.0.17",
-  "sketch": "ClimateCamera_1_2_0_IDE1819/ClimateCamera_1_2_0_IDE1819.ino",
-  "tft_spi_hz": 20000000,
-  "features": [
-    "SHT30/31",
-    "TFT UI",
-    "Wi-Fi AP+STA",
-    "Web UI",
-    "Web OTA",
-    "NVS"
-  ],
-  "gpio_definitions": {
-    "PIN_I2C_SDA": 21,
-    "PIN_I2C_SCL": 22,
-    "PIN_ENC_A": 32,
-    "PIN_ENC_B": 33,
-    "PIN_ENC_SW": 4,
-    "PIN_FAN_PWM": 16,
-    "PIN_FAN_TACH": 27,
-    "PIN_RELAY_IN1": 15,
-    "PIN_RELAY_IN2": 17,
-    "PIN_RELAY_IN3": 14,
-    "PIN_RELAY_IN4": 26
-  },
-  "fan_functions_unchanged_from_attached_1_0_4": {
-    "setFanDuty": true,
-    "setupFanPWM": true,
-    "updateFanControl": true
-  },
-  "esp32_compilation_performed": false,
-  "hardware_tests_performed": false,
-  "ready_bin_included": false,
-  "validation": "Static source checks, complete SHA-256 coverage, ZIP CRC and extracted-package checks",
-  "notes": "Source package only; build and bench-test before operation. Change default credentials."
+  "version": "1.2.1",
+  "target": "esp32dev",
+  "built": "2026-10-14",
+  "upstream_commit": "d66d1870cf69b1faa0d87a166b7394d9aaf209f0",
+  "compiled": true,
+  "hardware_tested": false,
+  "files": [
+    {
+      "path": "BUILD_REPORT.md",
+      "size": 1852,
+      "sha256": "c3ccf1dac34d8bcf978d465aefb302f5063cfa3dd5d7d98da6e495a66a7596e4"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 890,
+      "sha256": "0f89c2f798233071fb27eef7ca77a11f1c3c5d22c70be0eb004ebd3fa61096de"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/ClimateCamera.cpp",
+      "size": 57168,
+      "sha256": "567fc4668e669058a7f2a8cfd835f805876ebe9bfe1f8ba6cf2f3998edba17c8"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/ClimateCamera.h",
+      "size": 1555,
+      "sha256": "690e1f3538218ae86181c9e7d3a54e78432f56d19f6e6e3e2172cd5a1ed561dc"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/ClimateCamera_1_2_1_IDE1819.ino",
+      "size": 401,
+      "sha256": "b7cbcbb560b05e8fc2d846bcb1f52e98a00033f29b02b9115f662dbfd913b7b1"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/FirmwareVersion.h",
+      "size": 40,
+      "sha256": "00f278ad87c0467f7a9ca9f1ecb65e918d68265fb03aeb30c2c1f1f39ef20589"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/NetworkConfig.h",
+      "size": 395,
+      "sha256": "3d6da0699d39a3269de74577fb2e89b836a0d32662566a9e8bc87ea1ffdf33b4"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/NetworkServer.cpp",
+      "size": 14520,
+      "sha256": "73a9bc892097bcd5f1642072af4dc57f285f4b7e34388e50bbb8bfb7289b16aa"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/NetworkServer.h",
+      "size": 147,
+      "sha256": "c5639f7af1b32cbfc4737880598d14ad6132d87aff0bdd66198382471de7a1f8"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/Secrets.example.h",
+      "size": 460,
+      "sha256": "088c26201c720f1ec1995d96b8368f718df36f5f5fbe8d1973102039dc2a6ba0"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/Sht30Reliable.cpp",
+      "size": 7177,
+      "sha256": "a25d2f655bc685c86e6f351d001e6cad0930a90661d9f512594a06c2b0a5a17b"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/Sht30Reliable.h",
+      "size": 1278,
+      "sha256": "9f213c052ba225294e8822900dab9f4f2649debee6c5cf67bb6ed29bf6c3ad36"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/User_Setup.h",
+      "size": 696,
+      "sha256": "6894e7eccbbcd16373be8940ae0171fd3ead2587d0cc2c5fd6842bd24e5f9fac"
+    },
+    {
+      "path": "ClimateCamera_1_2_1_IDE1819/WebUI.h",
+      "size": 20303,
+      "sha256": "8820a7cee4966f881e130e252104e558aace887a30a012b2b54858429f05e6a6"
+    },
+    {
+      "path": "README.md",
+      "size": 13486,
+      "sha256": "f906565af34921ba3406e487708364b5bbe4cd05617329d797342c58d428b594"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "size": 593,
+      "sha256": "b5cc464e532240a034c44c9ae6f60627990baccc2232d435a2f60ae2e3b00a79"
+    },
+    {
+      "path": "TFT_eSPI_setup/User_Setup.h",
+      "size": 696,
+      "sha256": "3e68daddd96a975f057256d6deb9221d4809c6af54ba3526f7416a99534a70cf"
+    },
+    {
+      "path": "VERSION",
+      "size": 6,
+      "sha256": "6cf4e084b47f33c9b02ef79279d157833868f8f70514169a768be353ee328fea"
+    },
+    {
+      "path": "binaries/bootloader.bin",
+      "size": 17536,
+      "sha256": "3d234a7471f67b013686dabd4dee7c1fa915c9928463616a94bc9297acf1abf8"
+    },
+    {
+      "path": "binaries/firmware.bin",
+      "size": 970576,
+      "sha256": "5d3904a35d771b3dd5a96c638d4d9c6d7252adee30db2acb5f3f2210d7fd5633"
+    },
+    {
+      "path": "binaries/partitions.bin",
+      "size": 3072,
+      "sha256": "0a8b5720e7b77ff11f1462458c3a509dee79224e5279898f26d6a2e3ae0517b7"
+    },
+    {
+      "path": "docs/API.md",
+      "size": 3923,
+      "sha256": "7e6ed7b57c1c3452d7f4866c8ab85290dbe605b1a344ff6f96a77da24c3a54cb"
+    },
+    {
+      "path": "docs/OTA.md",
+      "size": 3780,
+      "sha256": "af98aadbb655ba053509fb47407f35d69123a272739a12289a8b5a917d4a3f1f"
+    },
+    {
+      "path": "docs/UPSTREAM_BUILD_REPORT_v1.2.0.md",
+      "size": 3009,
+      "sha256": "793bbe2f04bd4fed351ed4c67620673a0fc1e2195be7831b33dd6c2ebef98604"
+    },
+    {
+      "path": "platformio.ini",
+      "size": 329,
+      "sha256": "173a7bc46d4c32bffa8bf3e581762a36f66f3b52814c67319d343d694e0e4910"
+    }
+  ]
 }
